@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+datasets/
+weights/*.pt
+weights/*.onnx
+weights/*.engine
+assets/*.mp4
+runs/
+logs/*.csv
+logs/*.db
+.DS_Store
