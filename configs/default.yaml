@@ -1,0 +1,32 @@
+model:
+  base_weights: "yolo26n.pt"
+  weights: "models/aegis_v0.1-alpha.pt"
+  imgsz: 640
+  conf_threshold: 0.30
+  iou_threshold: 0.45
+  device: 0
+
+training:
+  data_yaml: "datasets/aerial/unified/data.yaml"
+  epochs: 30
+  batch: 8
+  optimizer: "AdamW"
+  lr0: 0.002
+  warmup_epochs: 3.0
+  amp: true
+  workers: 0
+  patience: 10
+  project: "aegis_runs"
+  name: "aegis_v01"
+
+classes:
+  0: "drone"
+  1: "bird"
+  2: "airplane"
+  3: "helicopter"
+  4: "missile"
+
+video:
+  source: 0
+  save_output: true
+  output_path: "assets/output_v0.1.mp4"

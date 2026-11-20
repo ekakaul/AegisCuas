@@ -1,11 +1,13 @@
 __pycache__/
 *.py[cod]
+.pytest_cache/
 .venv/
 venv/
 datasets/
 weights/*.pt
 weights/*.onnx
 weights/*.engine
+yolo26n.pt
 assets/*.mp4
 runs/
 logs/*.csv
