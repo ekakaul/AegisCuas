@@ -85,5 +85,5 @@ streamlit run dashboard\app.py
 ## Development Roadmap
 
 * **`v0.1.0-alpha` (Completed):** Unified 5-class aerial baseline dataset (~35.3k pairs), initial `yolo26n` training (`0.830 mAP50`), `src/detector.py` tracking/HUD engine, Streamlit console, and `pytest` suite.
-* **`v0.2.0-alpha` (Next):** Small-object and long-range UAV fine-tuning (Module 2) to improve distant `drone` recall above `0.80`.
-* **`v0.3.0-alpha` (Planned):** Hard-negative and adverse-condition fine-tuning (Module 3) to suppress false positives in cluttered backgrounds.
+* **`v0.2.0-alpha` (Next):** Small-object and long-range UAV fine-tuning to improve distant `drone` recall above `0.80`.
+* **`v0.3.0-alpha` (Planned):** Hard-negative and adverse-condition fine-tuning to suppress false positives in cluttered backgrounds.
